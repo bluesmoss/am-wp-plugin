@@ -50,7 +50,7 @@ const Edit = (props) => {
               label="Current Category" 
               value={category || 1} 
               options={categories}
-              onChange= {(newCategory) => setAttributes({category: newCategory})}
+              onChange= {(newCategory) => setAttributes({category: +newCategory})}
             />
           </PanelBody>
         </Panel>
